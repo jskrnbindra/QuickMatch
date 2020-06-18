@@ -88,12 +88,12 @@ This helps us achieve partitioning of data by their lat/long attributes. Trading
 > **How many are 'very few cells' to consider?**
 >This depends on how the area(a Country, etc) is partitioned i.e. the size of each cell of the grid matters here. If carefully decided in accordance with the business domain search constraints (result > 10 miles away are invalid) this can result in better performance. Too big or too small (w.r.t. business search constraint) grid cell size can lead to improper narrowing down and might end up spitting out more (and farther) records than ideally required.
 
-Consider this mock representation of a Geo Grid (obviously figure is not to scale) where India is the operational region and the land is divided into numerous small grids. Each grid contains data arranged to assist fast search and querying.  
-![Data arrangement view](https://raw.githubusercontent.com/jskrnbindra/QuickMatch/master/assets/data_arrangement.jpeg "Data arrangement")  
+Consider this mock representation of a Geo Grid (obviously figure is not to scale) where India is the operational region and the land is divided into numerous small grids. Each grid contains data arranged to assist fast search and querying.
+![Geo Grid on India](https://raw.githubusercontent.com/jskrnbindra/QuickMatch/master/assets/grid_india.jpeg "Geo Grid on India")    
 
 ##### Contents of each cell in the Geo Grid
 Each grid cell has data sorted in price ranges where each price range bucket has data sorted according to (finite) number of bedrooms buckets where each bedCount bucket has raw Property objects which can then be filtered based on finer search criteria (ex: no. of bathrooms).  
-![Geo Grid on India](https://raw.githubusercontent.com/jskrnbindra/QuickMatch/master/assets/grid_india.jpeg "Geo Grid on India")
+![Data arrangement view](https://raw.githubusercontent.com/jskrnbindra/QuickMatch/master/assets/data_arrangement.jpeg "Data arrangement")
 
 
 Say a cell in the Geo Grid represents a land area of **10 square miles**.  
