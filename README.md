@@ -95,7 +95,7 @@ Consider this mock representation of a Geo Grid (obviously figure is not to scal
 Each grid cell has data sorted in price ranges where each price range bucket has data sorted according to (finite) number of bedrooms buckets where each bedCount bucket has raw Property objects which can then be filtered based on finer search criteria (ex: no. of bathrooms).  
 ![Data arrangement view](https://raw.githubusercontent.com/jskrnbindra/QuickMatch/master/assets/data_arrangement.jpeg "Data arrangement")
 
-
+#### Why is it better to do SSR by Geo Location first?
 Say a cell in the Geo Grid represents a land area of **10 square miles**.  
 **10 mi<sup>2</sup> = 2.788 * 10<sup>7</sup> ft<sup>2</sup>**  
 Let's say we have each plot of 2500 ft<sup>2</sup> on an avergae.  
