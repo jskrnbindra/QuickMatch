@@ -134,6 +134,10 @@ There are quite a few Geo Indexing database available in the market including Re
 **Data arrangement**  
 Concatenated indexes can be leveraged in database systems to store the data in sorted price range buckets and then by sorted bedCount buckets. Most RDBMs systems support this. 
 NoSQL DBs can also be a candidate as it will drastically reduce server side data transformation before sending to the frontend.
+<br>
+This is the bare minimum, there huge spectrum of possiblities to build a system like this that is robust, scales well and is consistent.
+Standard techniques like DB Sharding, caching, Fault tolerance, CAP theorem risks, etc will come into play as the data and traffic grow.   
+ 
 
 ### Questions? Suggestions? Feedback?
 Reach out jskrnbindra@gmail.com
